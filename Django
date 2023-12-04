@@ -1,0 +1,267 @@
+Microsoft Windows [Version 10.0.22621.2715]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\black>cd djangogirls
+
+C:\Users\black\djangogirls>git init
+Initialized empty Git repository in C:/Users/black/djangogirls/.git/
+
+C:\Users\black\djangogirls>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        blog/
+        manage.py
+        mysite/
+        requirements.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\black\djangogirls>git add .
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'blog/admin.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'blog/models.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'mysite/settings.py', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\black\djangogirls>git remote add origin https://github.com/ivytechjoe/my-first-blog.git
+
+C:\Users\black\djangogirls>git push -u origin HEAD
+error: src refspec HEAD does not match any
+error: failed to push some refs to 'https://github.com/ivytechjoe/my-first-blog.git'
+
+C:\Users\black\djangogirls>git remote add origin https://github.com/ivytechjoe/my-first-blog.git
+error: remote origin already exists.
+
+C:\Users\black\djangogirls>git push -u origin HEAD
+error: src refspec HEAD does not match any
+error: failed to push some refs to 'https://github.com/ivytechjoe/my-first-blog.git'
+
+C:\Users\black\djangogirls>git remote add origin https://github.com/ivytechjoe/my-first-blog.git
+error: remote origin already exists.
+
+C:\Users\black\djangogirls>git push -u origin HEAD
+error: src refspec HEAD does not match any
+error: failed to push some refs to 'https://github.com/ivytechjoe/my-first-blog.git'
+
+C:\Users\black\djangogirls>git remote add origin https://github.com/ivytechjoe/my-first-blog.git
+error: remote origin already exists.
+
+C:\Users\black\djangogirls>git branch -M main
+
+C:\Users\black\djangogirls>git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/ivytechjoe/my-first-blog.git'
+
+C:\Users\black\djangogirls>python manage.py runserver
+Traceback (most recent call last):
+  File "C:\Users\black\djangogirls\manage.py", line 11, in main
+    from django.core.management import execute_from_command_line
+ModuleNotFoundError: No module named 'django'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\black\djangogirls\manage.py", line 22, in <module>
+    main()
+  File "C:\Users\black\djangogirls\manage.py", line 13, in main
+    raise ImportError(
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+
+C:\Users\black\djangogirls>
+
+C:\Users\black\djangogirls>python manage.py runserver
+Traceback (most recent call last):
+  File "C:\Users\black\djangogirls\manage.py", line 11, in main
+    from django.core.management import execute_from_command_line
+ModuleNotFoundError: No module named 'django'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\black\djangogirls\manage.py", line 22, in <module>
+    main()
+  File "C:\Users\black\djangogirls\manage.py", line 13, in main
+    raise ImportError(
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+
+C:\Users\black\djangogirls>myvenv\Scripts\activate
+
+(myvenv) C:\Users\black\djangogirls>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 03, 2023 - 16:42:33
+Django version 3.2.23, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[03/Dec/2023 16:42:43] "GET / HTTP/1.1" 200 0
+[03/Dec/2023 16:43:51] "GET / HTTP/1.1" 200 87
+[03/Dec/2023 16:44:36] "GET / HTTP/1.1" 200 160
+[03/Dec/2023 16:45:02] "GET / HTTP/1.1" 200 160
+[03/Dec/2023 17:49:23] "GET / HTTP/1.1" 200 981
+
+(myvenv) C:\Users\black\djangogirls> git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   blog/__init__.py
+        new file:   blog/admin.py
+        new file:   blog/apps.py
+        new file:   blog/migrations/0001_initial.py
+        new file:   blog/migrations/__init__.py
+        new file:   blog/models.py
+        new file:   blog/tests.py
+        new file:   blog/views.py
+        new file:   manage.py
+        new file:   mysite/__init__.py
+        new file:   mysite/asgi.py
+        new file:   mysite/settings.py
+        new file:   mysite/urls.py
+        new file:   mysite/wsgi.py
+        new file:   requirements.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   blog/views.py
+        modified:   mysite/urls.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        blog/templates/
+        blog/urls.py
+
+
+(myvenv) C:\Users\black\djangogirls>git add .
+warning: in the working copy of 'blog/views.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'mysite/urls.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'blog/templates/blog/post_list.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'blog/urls.py', LF will be replaced by CRLF the next time Git touches it
+
+(myvenv) C:\Users\black\djangogirls>git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   blog/__init__.py
+        new file:   blog/admin.py
+        new file:   blog/apps.py
+        new file:   blog/migrations/0001_initial.py
+        new file:   blog/migrations/__init__.py
+        new file:   blog/models.py
+        new file:   blog/templates/blog/post_list.html
+        new file:   blog/tests.py
+        new file:   blog/urls.py
+        new file:   blog/views.py
+        new file:   manage.py
+        new file:   mysite/__init__.py
+        new file:   mysite/asgi.py
+        new file:   mysite/settings.py
+        new file:   mysite/urls.py
+        new file:   mysite/wsgi.py
+        new file:   requirements.txt
+
+
+(myvenv) C:\Users\black\djangogirls>git commit -m "Changed the HTML for the site."
+[main (root-commit) 9731110] Changed the HTML for the site.
+ 18 files changed, 329 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 blog/__init__.py
+ create mode 100644 blog/admin.py
+ create mode 100644 blog/apps.py
+ create mode 100644 blog/migrations/0001_initial.py
+ create mode 100644 blog/migrations/__init__.py
+ create mode 100644 blog/models.py
+ create mode 100644 blog/templates/blog/post_list.html
+ create mode 100644 blog/tests.py
+ create mode 100644 blog/urls.py
+ create mode 100644 blog/views.py
+ create mode 100644 manage.py
+ create mode 100644 mysite/__init__.py
+ create mode 100644 mysite/asgi.py
+ create mode 100644 mysite/settings.py
+ create mode 100644 mysite/urls.py
+ create mode 100644 mysite/wsgi.py
+ create mode 100644 requirements.txt
+
+(myvenv) C:\Users\black\djangogirls>git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+(myvenv) C:\Users\black\djangogirls>git remote add origin https://github.com/ivytechjoe/my-first-blog.git
+error: remote origin already exists.
+
+(myvenv) C:\Users\black\djangogirls>git push -u origin HEAD
+info: please complete authentication in your browser...
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (23/23), 5.12 KiB | 2.56 MiB/s, done.
+Total 23 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/ivytechjoe/my-first-blog.git
+ * [new branch]      HEAD -> main
+branch 'main' set up to track 'origin/main'.
+
+(myvenv) C:\Users\black\djangogirls>python manage.py shell
+Python 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> Post.objects.all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'Post' is not defined
+>>> from blog.models import Post
+>>> Post.objects.all()
+<QuerySet [<Post: My name.>, <Post: Wife>, <Post: dogs>, <Post: people>, <Post: nothing>]>
+>>> Post.objects.create(author=me, title='Sample title', text='Test')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'me' is not defined
+>>> from django.contrib.auth.models import User
+>>> User.objects.all()
+<QuerySet [<User: joe>]>
+>>> me = User.objects.get(username='joe')
+>>> Post.objects.create(author=me, title='Sample title', text='Test')
+<Post: Sample title>
+>>> Post.objects.all()
+<QuerySet [<Post: My name.>, <Post: Wife>, <Post: dogs>, <Post: people>, <Post: nothing>, <Post: Sample title>]>
+>>> Post.objects.filter(author=me)
+<QuerySet [<Post: My name.>, <Post: Wife>, <Post: dogs>, <Post: people>, <Post: nothing>, <Post: Sample title>]>
+>>> Post.objects.filter(title__contains='title')
+<QuerySet [<Post: Sample title>]>
+>>> from django.utils import timezone
+>>> Post.objects.filter(published_date__lte=timezone.now())
+<QuerySet [<Post: nothing>]>
+>>> post = Post.objects.get(title="Sample title")
+>>> post.publish()
+>>> Post.objects.filter(published_date__lte=timezone.now())
+<QuerySet [<Post: nothing>, <Post: Sample title>]>
+>>> Post.objects.order_by('created_date')
+<QuerySet [<Post: My name.>, <Post: Wife>, <Post: dogs>, <Post: people>, <Post: nothing>, <Post: Sample title>]>
+>>> Post.objects.order_by('-created_date')
+<QuerySet [<Post: Sample title>, <Post: nothing>, <Post: people>, <Post: dogs>, <Post: Wife>, <Post: My name.>]>
+>>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+<QuerySet [<Post: nothing>, <Post: Sample title>]>
+>>> exit()
+
+(myvenv) C:\Users\black\djangogirls>
